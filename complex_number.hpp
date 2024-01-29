@@ -6,7 +6,7 @@ class ComplexNumber{
 
     public:
 
-    ComplexNumber(float new_a, float new_b);
+    ComplexNumber(float new_a = 0.0, float new_b = 0.0);
 
     ComplexNumber add(ComplexNumber complexNumber);
 
