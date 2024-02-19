@@ -16,7 +16,7 @@ class ComplexList{
 
     void add_to_number_list(ComplexNumber complexNumber);
 
-    std::string get_list();
+    std::string get_listname();
 
     ComplexNumber sum();
 

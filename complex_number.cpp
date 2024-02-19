@@ -37,6 +37,34 @@ ComplexNumber ComplexNumber::subtract(ComplexNumber complexNumber){
     return z;
 }
 
+ComplexNumber ComplexNumber::mult(ComplexNumber complexNumber){
+
+    float x = ((a * complexNumber.real()) - (b * complexNumber.imag()));
+
+    float y = ((a * complexNumber.imag()) + (b * complexNumber.real()));
+
+    ComplexNumber z = ComplexNumber(x, y);
+
+    return z;
+}
+
+ComplexNumber ComplexNumber::divide(ComplexNumber complexNumber){
+
+    float x = ((a * complexNumber.real()) + (b * complexNumber.imag()));
+
+    float y = ((a * complexNumber.imag()) - (b * complexNumber.real()));
+
+    float denom = (pow(complexNumber.real(), 2) + pow(complexNumber.imag(), 2));
+
+    x = x / denom;
+
+    y = - (y / denom);
+
+    ComplexNumber z = ComplexNumber(x, y);
+
+    return z;
+}
+
 ComplexNumber ComplexNumber::neg(){
 
     float x = -a;

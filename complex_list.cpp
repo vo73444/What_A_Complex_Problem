@@ -14,7 +14,7 @@ void ComplexList::add_to_number_list(ComplexNumber complexNumber){
 
 }
 
-std::string ComplexList::get_list(){
+std::string ComplexList::get_listname(){
     return list;
 }
 

@@ -12,6 +12,10 @@ class ComplexNumber{
 
     ComplexNumber subtract(ComplexNumber complexNumber);
 
+    ComplexNumber mult(ComplexNumber complexNumber);
+
+    ComplexNumber divide(ComplexNumber complexNumber);
+
     ComplexNumber neg();
 
     float mag();
